@@ -1,0 +1,63 @@
+@keyframes square-animation {
+  0% {
+      top: 0;
+      left: 0;
+    
+  }  
+ 
+  25% {
+      top: 0;
+      left: 300px;
+      background-color: lawngreen;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+  }
+
+  50% {
+      top: 300px;
+      left: 300px;
+      background-color: lightcoral;
+      border-radius: 0;
+    }
+ 
+
+  75% {
+      top: 300px;
+      left: 0;
+      background-color:ghostwhite;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+  }
+
+
+
+  100% {
+      top: 0;
+      left: 0;
+    
+  }
+
+
+}
+
+.wrapper {
+    background-color: grey;
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.wrapper div{
+    position: absolute;
+    background-color: indigo;
+    width: 100px;
+    height: 100px;
+    animation-name: square-animation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  
+}
+
